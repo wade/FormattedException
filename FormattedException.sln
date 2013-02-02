@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattedException", "FormattedException\FormattedException.csproj", "{6FB12D0B-81C7-47E7-87A6-EBF56A5AF2B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{E32D7B32-461A-4B4F-BD5E-7C214B9DECF3}"
+	ProjectSection(SolutionItems) = preProject
+		.build\build.bat = .build\build.bat
+		.build\build.proj = .build\build.proj
+		.build\README.txt = .build\README.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattedException.Tests", "FormattedException.Tests\FormattedException.Tests.csproj", "{00A23515-45FA-4FEA-950D-84B9C931A3C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{70FF2820-B097-4D7A-909E-C0C775E1FF07}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A287A54E-A5E1-4847-923C-7C2831170B57}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuspec", ".nuspec", "{73F680F9-504E-4944-BDA2-692E74E6805A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuspec\FormattedException.nuspec = .nuspec\FormattedException.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FB12D0B-81C7-47E7-87A6-EBF56A5AF2B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB12D0B-81C7-47E7-87A6-EBF56A5AF2B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB12D0B-81C7-47E7-87A6-EBF56A5AF2B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB12D0B-81C7-47E7-87A6-EBF56A5AF2B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00A23515-45FA-4FEA-950D-84B9C931A3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A23515-45FA-4FEA-950D-84B9C931A3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A23515-45FA-4FEA-950D-84B9C931A3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A23515-45FA-4FEA-950D-84B9C931A3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

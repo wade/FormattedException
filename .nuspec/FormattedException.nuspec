@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>FormattedException</id>
+        <version>1.0.0</version>
+        <title>FormattedException</title>
+        <authors>Wade Reynolds</authors>
+        <owners>Wade Reynolds</owners>
+        <licenseUrl>https://github.com/wade/FormattedException/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/wade/FormattedException/</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>FormattedException is a utility class library that provides a useful abstract base class named FormattedException that is a drop-in replacement for the System.Exception class.</description>
+        <summary>FormattedException is a utility class library that provides a useful abstract base class named FormattedException that is a drop-in replacement for the System.Exception class that adds additional constructor overloads that provide built-in string formatting for the exception message while maintaining the capability of specifying an inner exception and the original constructor overloads. If you've ever used String.Format() inside an exception constructor, usually when throwing, you'll appreciate the time saving that this class provides. This class is stable and has been used for many years. This is an abstract base class which means that it is used to create new, application or domain specific exception types which can take advantage of the new constructor overloads to provide message formatting convenience.</summary>
+        <copyright>Copyright &#x00a9; Wade A. Reynolds. All rights reserved.</copyright>
+        <language>en-US</language>
+        <tags>formatted exception formattedexception</tags>
+    </metadata>
+    <files>
+		<file src="out\bin\FormattedException.dll" target="lib\net40" />
+        <file src="out\bin\FormattedException.pdb" target="lib\net40" />
+		<file src="..\LICENSE" target="LICENSE" />
+		<file src="..\README.md" target="README.md" />
+	</files>
+</package>
