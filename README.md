@@ -40,10 +40,19 @@ To install FormattedException, run the following command in the Package Manager 
 `PM> Install-Package FormattedException`
 
 
-Creating Derived Exception Classes
-----------------------------------
+Creating Derived Exception Classes Using ReSharper
+--------------------------------------------------
 
-A quick way to create an exception class that derives from FormattedException 
+A quick way to create a new exception class that derives from FormattedException is to 
+use the provided ReSharper file template. Of course, the prerequisite is that you must 
+have and use ReSharper. If so, please see the /ReSharpertemplates/README.txt file for 
+more information on how to import and use the template.
+
+
+Creating Derived Exception Classes Using Copy, Paste, Find and Replace
+----------------------------------------------------------------------
+
+Another way to create a new exception class that derives from FormattedException 
 without manually creating the constructor overloads is:
 
 - Copy the FormattedException.cs file and rename it to your new exception class' name.
@@ -52,6 +61,7 @@ without manually creating the constructor overloads is:
 - Perform a find-and-replace (Ctrl+H in VS), replacing "FormattedException" with your class' name.
 - Change the base class from "Exception" to "FormattedException".
 - Edit the code doc XML summary element for the exception class.
+
 
 Tools
 -----
