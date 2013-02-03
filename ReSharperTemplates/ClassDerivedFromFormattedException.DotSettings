@@ -1,0 +1,204 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Description/@EntryValue">Class derived from FormattedException</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Text/@EntryValue">$HEADER$using System;&#xD;
+using System.Runtime.Serialization;&#xD;
+&#xD;
+namespace $NAMESPACE$&#xD;
+{&#xD;
+    /// &lt;summary&gt;&#xD;
+    /// Thrown for [context]-specific exceptions.&#xD;
+    /// &lt;/summary&gt;&#xD;
+    [Serializable]&#xD;
+	public class $CLASS$ : FormattedException&#xD;
+	{&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$"/&gt; class without a message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		public $CLASS$()&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$"/&gt; class without a message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="message"&gt;&#xD;
+		/// A human-readable description of the error. &#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&#xD;
+		/// &lt;/param&gt;&#xD;
+		public $CLASS$(string message)&#xD;
+			: base(message)&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$"/&gt; class without a message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="message"&gt;A human-readable description of the error.&#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&lt;/param&gt;&#xD;
+		/// &lt;param name="innerException"&gt;The exception that is the cause of the current exception.&lt;/param&gt;&#xD;
+		public $CLASS$(string message, Exception innerException)&#xD;
+			: base(message, innerException)&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$" /&gt; class with the specified formatted error message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="message"&gt;&#xD;
+		/// A human-readable description of the error. &#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&#xD;
+		/// &lt;/param&gt;&#xD;
+		/// &lt;param name="arg0"&gt;The object to write using the error message format.&lt;/param&gt;&#xD;
+		public $CLASS$(string message, object arg0)&#xD;
+			: base(string.Format(message, arg0))&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$" /&gt; class with the specified formatted error message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="message"&gt;&#xD;
+		/// A human-readable description of the error. &#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&#xD;
+		/// &lt;/param&gt;&#xD;
+		/// &lt;param name="arg0"&gt;The first object to write using the error message format.&lt;/param&gt;&#xD;
+		/// &lt;param name="arg1"&gt;The second object to write using the error message format.&lt;/param&gt;&#xD;
+		public $CLASS$(string message, object arg0, object arg1)&#xD;
+			: base(string.Format(message, arg0, arg1))&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$" /&gt; class with the specified formatted error message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="message"&gt;&#xD;
+		/// A human-readable description of the error. &#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&#xD;
+		/// &lt;/param&gt;&#xD;
+		/// &lt;param name="arg0"&gt;The first object to write using the error message format.&lt;/param&gt;&#xD;
+		/// &lt;param name="arg1"&gt;The second object to write using the error message format.&lt;/param&gt;&#xD;
+		/// &lt;param name="arg2"&gt;The third object to write using the error message format.&lt;/param&gt;&#xD;
+		public $CLASS$(string message, object arg0, object arg1, object arg2)&#xD;
+			: base(string.Format(message, arg0, arg1, arg2))&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$" /&gt; class with the specified formatted error message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="message"&gt;&#xD;
+		/// A human-readable description of the error. &#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&#xD;
+		/// &lt;/param&gt;&#xD;
+		/// &lt;param name="args"&gt;An array of objects to write using the error message format.&lt;/param&gt;&#xD;
+		public $CLASS$(string message, params object[] args)&#xD;
+			: base(string.Format(message, args))&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$" /&gt; class with the specified error message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="innerException"&gt;The exception that is the cause of the current exception.&lt;/param&gt;&#xD;
+		/// &lt;param name="message"&gt;&#xD;
+		/// A human-readable description of the error. &#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&#xD;
+		/// &lt;/param&gt;&#xD;
+		public $CLASS$(Exception innerException, string message)&#xD;
+			: base(message, innerException)&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$" /&gt; class with the specified formatted error message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="innerException"&gt;The exception that is the cause of the current exception.&lt;/param&gt;&#xD;
+		/// &lt;param name="message"&gt;&#xD;
+		/// A human-readable description of the error. &#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&#xD;
+		/// &lt;/param&gt;&#xD;
+		/// &lt;param name="arg0"&gt;The object to write using the error message format.&lt;/param&gt;&#xD;
+		public $CLASS$(Exception innerException, string message, object arg0)&#xD;
+			: base(string.Format(message, arg0), innerException)&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$" /&gt; class with the specified formatted error message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="innerException"&gt;The exception that is the cause of the current exception.&lt;/param&gt;&#xD;
+		/// &lt;param name="message"&gt;&#xD;
+		/// A human-readable description of the error. &#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&#xD;
+		/// &lt;/param&gt;&#xD;
+		/// &lt;param name="arg0"&gt;The first object to write using the error message format.&lt;/param&gt;&#xD;
+		/// &lt;param name="arg1"&gt;The second object to write using the error message format.&lt;/param&gt;&#xD;
+		public $CLASS$(Exception innerException, string message, object arg0, object arg1)&#xD;
+			: base(string.Format(message, arg0, arg1), innerException)&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$" /&gt; class with the specified formatted error message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="innerException"&gt;The exception that is the cause of the current exception.&lt;/param&gt;&#xD;
+		/// &lt;param name="message"&gt;&#xD;
+		/// A human-readable description of the error. &#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&#xD;
+		/// &lt;/param&gt;&#xD;
+		/// &lt;param name="arg0"&gt;The first object to write using the error message format.&lt;/param&gt;&#xD;
+		/// &lt;param name="arg1"&gt;The second object to write using the error message format.&lt;/param&gt;&#xD;
+		/// &lt;param name="arg2"&gt;The third object to write using the error message format.&lt;/param&gt;&#xD;
+		public $CLASS$(Exception innerException, string message, object arg0, object arg1, object arg2)&#xD;
+			: base(string.Format(message, arg0, arg1, arg2), innerException)&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$" /&gt; class with the specified formatted error message.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="innerException"&gt;The exception that is the cause of the current exception.&lt;/param&gt;&#xD;
+		/// &lt;param name="message"&gt;&#xD;
+		/// A human-readable description of the error. &#xD;
+		/// The caller of this constructor is required to ensure that this string has been localized for the current system culture.&#xD;
+		/// &lt;/param&gt;&#xD;
+		/// &lt;param name="args"&gt;An array of objects to write using the error message format.&lt;/param&gt;&#xD;
+		public $CLASS$(Exception innerException, string message, params object[] args)&#xD;
+			: base(string.Format(message, args), innerException)&#xD;
+		{&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Initializes a new instance of the &lt;see cref="$CLASS$" /&gt; class with serialized data.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		/// &lt;param name="info"&gt;The &lt;see cref="SerializationInfo" /&gt; instance that holds the serialized object data about the exception being thrown.&lt;/param&gt;&#xD;
+		/// &lt;param name="context"&gt;The &lt;see cref="StreamingContext" /&gt; instance that contains contextual information about the source or destination.&lt;/param&gt;&#xD;
+		/// &lt;remarks&gt;&#xD;
+		/// This constructor overload is provided in order to adhere to custom exception design best practice guidelines.&#xD;
+		/// &lt;/remarks&gt;&#xD;
+		protected $CLASS$(SerializationInfo info, StreamingContext context)&#xD;
+			: base(info, context)&#xD;
+		{&#xD;
+		}&#xD;
+	}&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/CustomProperties/=FileName/@EntryIndexedValue">Class</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=HEADER/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=HEADER/Expression/@EntryValue">fileheader()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=HEADER/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=NAMESPACE/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=NAMESPACE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=CLASS/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=CLASS/Expression/@EntryValue">getFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=CLASS/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0452D71246CFAA4FA2BE82E91E6D69CB/Field/=CLASS/Order/@EntryValue">2</s:Int64></wpf:ResourceDictionary>
